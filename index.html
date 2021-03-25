@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> THE CODE HOTELS </title>
+        <!-- 데스크탑 PC용 스타일 최소폭 1200px 이상 -->
+    <link rel="stylesheet"
+           media="all and (min-width: 1200px)"
+           href="style/style_PC.css">
+
+    <!-- 태블릿 PC용 스타일 너비 : 800px 이상 -->
+    <link rel="stylesheet" media="all and (max-width: 1199px)"
+            href="style/style_Tablet.css">
+
+    <!-- 스마트폰 스타일 너비 : 800px 미만 -->
+    <link rel="stylesheet" media="all and (max-width: 800px)"
+            href="style/style_Phone.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="headerLogo">
+                <a href="#"><span class="fontsize">T</span>HE <span class="fontsize">C</span>ODE<span id="fontsizeSmall"> HOTELS</span></a>
+            </div> <!-- div#headerLogo -->
+
+            <div id="headerTop">
+                <ul id="topMenu">
+                    <li><a href="#">로그인 <span class="move"> | </span></a></li>
+                    <li><a href="#">멤버십가입 <span class="move"> | </span></a> </li>
+                    <li>
+                        <a href="#">
+                            예약확인 <img src="images/triangle.png" alt="눌러보기" width="10"> <span class="move"> | </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            언어선택 <img src="images/triangle.png" alt="눌러보기" width="10">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <nav id="gnb">
+                <ul id="mainMenu">
+                    <li><a href="#">호텔찾기</a></li>
+                    <li><a href="#">예약</a></li>
+                    <li><a href="#">호텔소개</a></li>
+                    <li><a href="#">프로모션</a></li>
+                    <li><a href="#">고객문의</a></li>
+                </ul>
+            </nav> <!-- nav#gnb -->
+        </header> <!--  header#header -->
+
+        <main id="main">
+            <div id="slideArea">
+                <div id="slideshow">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/slideshow.jpg" alt="슬라이드 이미지 1" width="1500" height="500">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/slideshow2.jpg" alt="슬라이드 이미지 2" width="1500" height="500">
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- div#slideshow -->
+
+                <div id="promotionTxt">
+                    <span>THE CODE HOTEL</span>
+                    <P>
+                        나를 위한 휴식처, 나 자신을 위한 선물 <br>
+                        지금 만나보세요.
+                    </P>
+                </div> <!-- promotionTxt -->
+            </div> <!-- div#slideArea -->
+
+            <div id="mainContentsTitle">
+                <h1>Special Offers</h1>
+            </div>
+            <div id="mainContents">
+                <div id="contents_1">
+                    <img src="images/bed&breakfast.jpg" alt="조식사진" width="300" height="180">
+                    <h3 class="contentsTitle"> Bed & Breakfast </h3>
+                    <p class="contents">
+                        고객님의 여유로운 호텔스테이를 위해 조식포함상품을 준비했습니다.
+                    </p>
+                    <span>#조식</span>
+                    <div>
+                        <a href="#">자세히보기</a>
+                    </div>
+                </div> <!-- contents_1 -->
+                <div id="contents_2">
+                    <img src="images/pleasure&relaxation.jpg" alt="힐링사진" width="300" height="180">
+                    <h3 class="contentsTitle"> Pleasure & Relaxation </h3>
+                    <p class="contents">
+                        넓고 여유로운 객실에서 일상의 피로를 풀며 편안한 휴식을 취해 보세요.
+                    </p>
+                    <span>#다이닝 #스파</span>
+                    <div>
+                        <a href="#">자세히보기</a>
+                    </div>
+                </div> <!-- contents_2 -->
+                <div id="contents_3">
+                    <img src="images/event&season.jpg" alt="이벤트사진" width="300" height="180">
+                    <h3 class="contentsTitle"> Event & Season </h3>
+                    <p class="contents">
+                        싱그러운봄, 꾳피우는 찬란한 여행의 순간을 즐겨보세요.
+                    </p>
+                    <span>#시즌ㆍ홀리데이</span>
+                    <div>
+                        <a href="#">자세히보기</a>
+                    </div>
+                </div> <!-- contents_3 -->
+                <div id="contents_4">
+                    <img src="images/family&kids.jpg" alt="가족사진" width="300" height="180">
+                    <h3 class="contentsTitle"> Familly & Kids </h3>
+                    <p class="contents">
+                        더넓고 쾌적한 스위트룸에서 사랑하는 사람과 소중한 시간을 보내세요.
+                    </p>
+                    <span>#키즈 #액티비티</span>
+                    <div>
+                        <a href="#">자세히보기</a>
+                    </div>
+                </div> <!-- contents_4 -->
+            </div> <!-- div#mainContents -->
+
+            <div id="mainMembership">
+                <img src="images/membership.jpg" alt="멤버십사진" width="1500" height="300">
+                <div id="membershipTxt">
+                    <h1>Membership Benefit </h1>
+                    <h3>멤버십 혜택</h3>
+                    <p>
+                        더코드 멤버십으로 다양한 혜택을 누르십시오.
+                    </p>
+                    <a href="#"> 혜택 자세히보기</a>
+                    <a href="#"> 멤버십가입 바로가기</a>
+                </div> <!-- div#membershipTxt -->
+            </div> <!-- div#mainMembership -->
+
+            <div id="gallery">
+                <img src="images/gallery1.jpg" alt="갤러리이미지1" width="300" height="300">
+                <div id="galleryTitle">
+                    <h1>Gallery</h1>
+                    <p>
+                        당신의 소중한 시간이 더 특별하게 빛날 수 있도록, <br>
+                        저희 더코드호텔이 함께하겠습니다.
+                    </p>
+                </div> <!-- galleryTitle-->
+                <img src="images/gallery2.jpg" alt="갤러리이미지2" width="300" height="300">
+                <img src="images/gallery3.jpg" alt="갤러리이미지3" width="300" height="300">
+                <img src="images/gallery4.jpg" alt="갤러리이미지4" width="300" height="300">
+                <img src="images/gallery5.jpg" alt="갤러리이미지5" width="300" height="300">
+                <img src="images/gallery6.jpg" alt="갤러리이미지6" width="300" height="300">
+
+            </div> <!-- div#gallery -->
+        </main> <!--  main#main -->
+
+        <footer id="footer">
+            <div id="footerWrap">
+                <div id="leftWrap">
+                    <div id="footerLogo">
+                        <a href="#"><span class="fontsize2">T</span>HE <span class="fontsize2">C</span>ODE<span id="fontsizeSmall2"> HOTELS</span></a>
+                    </div> <!-- div#footerLogo -->
+                    <div id="contact">
+                        <p>
+                            더코드 객실예약 02-000-0000 <br>
+                            더코드 고객센터 02-000-0001 <br>
+                            이메일 문의 thecode@naver.com
+
+                        </p>
+                    </div> <!--  div#contact-->
+                </div> <!-- div#leftWrap-->
+
+                <div id="footerLnbwrap">
+                    <div class="menuCol">
+                        <div class="lnbHeading">호텔소개</div>
+                        <ul class="footerMenu">
+                            <li><a href="#">더코드호텔 소개</a></li>
+                            <li><a href="#">뉴스/수상</a></li>
+                            <li><a href="#">갤러리</a></li>
+                            <li><a href="#">인재채용</a></li>
+                        </ul>
+                    </div> <!-- div#menuCol -->
+
+                    <div class="menuCol">
+                        <div class="lnbHeading">고객서비스</div>
+                        <ul class="footerMenu">
+                            <li><a href="#">호텔찾기/예약</a></li>
+                            <li><a href="#">예약확인</a></li>
+                            <li><a href="#">예약수정/취소</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div> <!-- div#menuCol -->
+
+                    <div class="menuCol">
+                        <div class="lnbHeading">멤버십</div>
+                        <ul class="footerMenu">
+                            <li><a href="#">멤버십 종합안내</a></li>
+                            <li><a href="#">멤버십 가입</a></li>
+                            <li><a href="#">마이 멤버십</a></li>
+                        </ul>
+                    </div> <!-- div#menuCol -->
+
+                    <div class="menuCol">
+                        <div class="lnbHeading">프로모션</div>
+                        <ul class="footerMenu">
+                            <li><a href="#">special offers</a></li>
+                            <li><a href="#">호텔이벤트</a></li>
+                        </ul>
+                    </div> <!-- div#menuCol -->
+                </div>
+                <!--div#footerLnbwrap -->
+            </div> <!-- div#footerWrap-->
+
+            <div id="footerList">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">더코드회원약관</a></li>
+                </ul>
+            </div> <!-- footerList -->
+
+            <div id="footerBottomWrap">
+                <div id="footerLeft">
+                    <div id="companyinfo">
+                        <ul>
+                            <li>(주) 더코드 서울특별시 OO구 OO로 123 (우:123456)</li>
+                            <li>대표이사 OOO</li>
+                            <li>사업자등록번호 1213-456-78910</li>
+                            <li>통신판매신고번호 중구 000123호</li>
+                        </ul>
+                    </div> <!-- div#companyinfo -->
+                    <div id="copyright">
+                        <span>
+                            Copyright &copy; THE CODE HOTEL CO.LTD. ALL Rights Reserved.
+                        </span>
+                    </div> <!-- div#copyright -->
+                </div> <!-- div#footerLeft -->
+                <div id="snsIcon">
+                    <p> 더코드 호텔 소식 </p>
+                    <a href="#"><img src="images/sns_facebook.png" alt="페이스북 아이콘" width="50"></a>
+                    <a href="#"><img src="images/sns_instagram.png" alt="인스타 아이콘" width="55"></a>
+                    <a href="#"><img src="images/sns_youtube.png" alt="유튜브 아이콘" width="52"></a>
+                </div> <!-- div#snsIcon-->
+            </div> <!-- div#footerBottomWrap -->
+        </footer> <!-- footer#footer -->
+
+    </div> <!-- div#wrap -->
+</body></html>

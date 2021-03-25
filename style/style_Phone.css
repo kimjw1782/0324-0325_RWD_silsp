@@ -1,0 +1,568 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* Reset 시작 */
+* {
+    color: #3c3c3c;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+a:active {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset 시작 */
+
+/* Guideline 시작 */
+/*
+div#wrap {
+    border: 1px solid #000;
+}
+
+header#header {
+    border: 1px solid #000;
+}
+
+main#main {
+    border: 1px solid #000;
+}
+
+footer#footer {
+    border: 1px solid #000;
+}
+*/
+
+/* Guideline 시작 */
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* div#wrap 끝 */
+
+/* header#header 시작 */
+header#header {
+    height: 500px;
+}
+
+/* header#headerLogo 시작 */
+div#headerLogo {
+/*    border: 1px solid #000;*/
+    font-size: 28px;
+    width: 300px;
+    height: 150px;
+    line-height: 120px;
+    font-family: 'RocknRoll One', sans-serif;
+
+    background-color: #e3d0b4;
+}
+
+div#headerLogo span.fontsize {
+    font-size: 43px;
+}
+
+div#headerLogo span#fontsizeSmall {
+    font-size: 16px;
+}
+
+/* header#headerLogo 끝 */
+
+/* headerTop 시작 */
+div#headerTop ul {
+    width: 800px;
+    display: inline-block;
+}
+
+div#headerTop ul li {
+    float: left;
+}
+
+div#headerTop ul li a {
+    color: #58472f;
+    font-size: 12px;
+    width: 76px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    /*    border: 1px solid #000;*/
+    display: block;
+
+    position: relative;
+    top: -50px;
+    left: 40px;
+}
+
+div#headerTop span.move {
+    padding-left: 5px;
+}
+
+div#headerTop ul li a img {
+    margin-left: 1px;
+}
+
+/* headerTop 시작 */
+
+
+/* nav#gnb 시작 */
+nav#gnb {
+/*        width: 330px;*/
+}
+
+nav#gnb > ul {
+        width: 330px;
+}
+
+nav#gnb > ul > li {
+    float: left;
+}
+
+nav#gnb > ul > li > a {
+    /*    border: 1px solid #000;*/
+    color: #58472f;
+    width: 250px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 42px;
+    border: 2px solid #90734a;
+    border-radius: 8px;
+    margin: 5px auto;
+    display: block;
+
+    position: relative;
+    top: 0;
+    left: 50px;
+}
+
+/* nav#gnb 끝 */
+
+/* header#header 끝 */
+
+/* main#main 시작 */
+/* div#slideshow 시작 */
+#main div#slideArea {
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#main div#slideshow {
+    width: 700px;
+    height: 350px;
+
+    position: relative;
+    left: 0;
+
+    transition: all 3s;
+}
+
+#main div#slideshow img {
+    width: 350px;
+}
+
+#main div#slideshow:hover {
+    left: -350px;
+}
+
+#main #slideshow > ul > li {
+    position: absolute;
+}
+
+#main #slideshow > ul > li:nth-child(2) {
+    left: 350px;
+}
+
+#slideArea div#promotionTxt {
+    width: 300px;
+    height: 100px;
+    font-weight: bold;
+    line-height: 2em;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, 450%);
+}
+
+#slideArea div#promotionTxt span {
+    color: #000;
+    font-size: 20px;
+}
+
+#slideArea div#promotionTxt p {
+    color: #000;
+    font-size: 13px;
+}
+
+/* div#slideshow 끝 */
+
+/* div#mainContentsTitle 시작 */
+div#mainContentsTitle h1 {
+    color: #998465;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+/* div#mainContentsTitle 끝 */
+
+/* div#mainContents 시작 */
+div#mainContents {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div#mainContents img {
+    width: 350px;
+    height: 220px;
+}
+
+div#mainContents h3.contentsTitle {
+    color: #998465;
+    padding: 15px 0 5px;
+    border-bottom: 2px solid #998465;
+}
+
+div#mainContents p.contents {
+    width: 265px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+    line-height: 1.5em;
+}
+
+div#mainContents span {
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div#mainContents a {
+    color: #fff;
+    width: 350px;
+    height: 45px;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #998465;
+
+    display: inline-block;
+}
+
+/* div#mainContents 끝 */
+
+/* div#mainMembership 시작 */
+#mainMembership {
+    margin: 0px 0 50px;
+    position: relative;
+}
+
+#mainMembership img {
+    width: 350px;
+    margin-top: 50px;
+}
+
+#mainMembership div#membershipTxt {
+    width: 250px;
+    height: 150px;
+    line-height: 1em;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -60%);
+}
+
+#mainMembership h1,
+#mainMembership h3,
+#mainMembership p {
+    color: #fff;
+}
+
+#mainMembership h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#mainMembership h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#mainMembership p {
+    font-size: 17px;
+    text-align: center;
+    padding: 15px 0 30px;
+}
+
+#mainMembership a {
+    color: #fff;
+    width: 150px;
+    height: 45px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #fff;
+
+    display: inline-block;
+}
+
+/* div#mainMembership 끝 */
+
+/* div#gallery 시작 */
+div#gallery {
+    width: 300px;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+#gallery div#galleryTitle {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+}
+
+#gallery div#galleryTitle h1 {
+    font-size: 60px;
+    padding-bottom: 15px;
+}
+
+#gallery div#galleryTitle p {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+#gallery img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#gallery img:first-child {
+    display: none;
+}
+
+/* div#gallery 끝 */
+
+/* main#main 끝 */
+
+/* footet#footer  시작 */
+footer#footer {
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* div#footerwrap  시작 */
+div#footerWrap {
+    background-color: #e3d0b4;
+}
+
+footer#footer div#footerWrap {
+    height: 600px;
+    margin-top: 30px;
+}
+
+/* div#leftWrap 시작 */
+div#leftWrap {
+    width: 350px;
+    height: 160px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+div#footerLogo {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+div#footerLogo span.fontsize2 {
+    font-size: 33px;
+}
+
+div#footerLogo span#fontsizeSmall2 {
+    font-size: 12px;
+}
+
+#leftWrap div#contact p {
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+/* div#leftWrap 끝 */
+
+
+/* div#"footerLnbwrap 시작 */
+div#footerLnbwrap {
+    width: 350px;
+    text-align: center;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    position: relative;
+    top: 0px;
+}
+
+#footerLnbwrap div.menuCol {
+    width: 175px;
+}
+
+#footerLnbwrap div.lnbHeading {
+    color: #58472f;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+#footerLnbwrap ul.footerMenu li {
+    font-size: 15px;
+    line-height: 2em;
+}
+
+/* div#footerLnbwrap 끝 */
+/* div#footerwrap  끝 */
+
+/* footerList  시작 */
+div#footerList {
+    height: 40px;
+    border-bottom: 1px solid #aaa;
+    margin-top: 30px;
+}
+
+div#footerList ul li {
+    float: left;
+}
+
+div#footerList ul li a {
+    color: #888;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding-right: 10px;
+    text-align: center;
+
+    display: inline-block;
+}
+
+div#footerList ul li:not(:last-child)::after {
+    content: "|";
+    width: 10px;
+    display: inline-block;
+}
+
+/* footerList  끝 */
+
+/* div#footerBottomWrap 시작*/
+#footerBottomWrap {
+/*
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+*/
+}
+
+/*div#footerLeft 시작 */
+div#footerLeft {
+    width: 350px;
+}
+
+#footerBottomWrap div#companyinfo {
+    padding-top: 20px;
+    display: inline-block;
+}
+
+#footerBottomWrap div#companyinfo ul li {
+    color: #888;
+    font-size: 12px;
+    padding-right: 20px;
+    float: left;
+}
+
+#footerBottomWrap div#copyright span {
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*div#footerLeft 끝*/
+
+/* div#snsIcon 시작 */
+div#snsIcon {
+    width: 350px;
+    text-align: center;
+}
+
+div#snsIcon p {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* div#snsIcon 끝 */
+
+/* div#footerBottomWrap 끝*/
+
+/* footet#footer  끝 */
